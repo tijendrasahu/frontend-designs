@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right , rgb(54, 54, 111),purple);
+    overflow: hidden;
+}
+
+.stars div{
+    position: absolute;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    width: 30px;
+    height: 30px;
+    -webkit-box-shadow: 0 0 20px #fff;
+    box-shadow: 0 0 30px #fff;
+    animation-name:move;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.stars div:nth-child(1){
+    top:800px;
+    left: 300px;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    animation-duration: 16s;   
+}
+
+.stars div:nth-child(2){
+    top:800px;
+    left: 480px;
+    width: 70px;
+    height: 70px;
+    animation-duration: 13s;
+}
+
+.stars div:nth-child(3){
+    top:800px;
+    left: 620px;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    animation-duration: 12s;  
+}
+
+.stars div:nth-child(4){
+    top:800px;
+    left: 760px;
+    width: 70px;
+    height: 70px;
+    animation-duration: 10s;
+}
+
+.stars div:nth-child(5){
+    top:800px;
+    left: 900px;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;  
+}
+
+.stars div:nth-child(6){
+    top:800px;
+    left: 1040px;
+    width: 70px;
+    height: 70px;
+    animation-duration: 13s;
+}
+
+.stars div:nth-child(7){
+    top:800px;
+    left: 1140px;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    animation-duration: 17s; 
+    opacity: 0.5;
+}
+
+.stars div:nth-child(8){
+    top:800px;
+    left: 1240px;
+    width: 70px;
+    height: 70px;
+    animation-duration: 15s;
+}
+
+.stars div:nth-child(9){
+    top:800px;
+    left: 1340px;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    animation-duration: 11s;
+    opacity: 0.5;  
+}
+
+.stars div:nth-child(10){
+    top:800px;
+    left: 350px;
+    width: 70px;
+    height: 70px;
+    animation-duration: 15s;
+    animation-delay: 6s;
+}
+
+.stars div:nth-child(11){
+    top:800px;
+    left: 200px;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    animation-duration: 11s;
+    animation-delay: 5s;
+    opacity: 0.5;  
+}
+
+.stars div:nth-child(12){
+    top:800px;
+    left: 400px;
+    width: 70px;
+    height: 70px;
+    animation-duration: 15s;
+    animation-delay: 8s;
+}
+
+.stars div:nth-child(13){
+    top:800px;
+    left: 800px;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    animation-duration: 11s;
+    animation-delay: 7s;
+    opacity: 0.5;  
+}
+
+.stars div:nth-child(14){
+    top:800px;
+    left: 1100x;
+    width: 70px;
+    height: 70px;
+    animation-duration: 15s;
+    animation-delay: 6s;
+}
+
+.stars div:nth-child(15){
+    top:800px;
+    left: 1300px;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    animation-duration: 11s;
+    animation-duration: 5s;
+    opacity: 0.5;  
+}
+
+.stars div:nth-child(16){
+    top:800px;
+    left: 940px;
+    width: 70px;
+    height: 70px;
+    animation-duration: 15s;
+
+}
+
+.container{
+    background-color: transparent;
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 5px solid white;
+    border-radius: 40px;
+    padding-top: 50px;
+    margin-top: 60px;
+    width: 1000px;
+    height: 600px;
+    transition: 700ms;
+    animation-name: appear;
+    animation-duration: 1s;
+    
+}
+
+.container:hover{
+    box-shadow: 10px 20px 30px white;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Zen dots;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.623);
+    animation-name: appear;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.fev img{
+    height: 42px;
+    width: 42px;
+    animation-name: appear;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.navi{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.navi li {
+    display: inline;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.navi a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-family: Zen dots;
+    transition: 200ms;
+}
+
+.navi a:hover{
+    border-bottom: 2px solid white;
+}
+
+.para pre{
+    padding-top: 55px;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+.new{
+    display: flex;
+    justify-content: center;
+}
+
+.new img{
+    width: 440px;
+    height: 220px;
+    border-radius: 30px;
+}
+
+@keyframes appear {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes move{
+    from{transform: translateY(0px);}
+
+    to{transform: translateY(-900px);}
+}
